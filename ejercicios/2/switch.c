@@ -5,10 +5,27 @@
  */
 
 /* Bibliotecas a incluir */
+#include <stdio.h>
 
-void main()
+void main(void)
 {
 	/* Declaración de variables */
+	int valor = 0;
 
 	/* Código usando condicional switch */
+	switch (valor) {
+	// CODING STYLE. case siempre en las misma identación que el switch
+	case 0:
+		// CODING STYLE. código de los case con una identación
+		printf ("El valor es 0\n");
+		break;
+	case 1:
+		printf ("El valor no es 0\n");
+		break;
+	default:
+		// Es bueno poner un printf en el default
+		printf ("Valor incorrecto. Solo me vale 0 o 1\n");
+		break;
+
+	}
 }
